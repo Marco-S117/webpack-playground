@@ -1,13 +1,23 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const toml = require('toml')
 const yaml = require('yamljs')
 const json5 = require('json5')
 
 module.exports = {
-  entry: './src/assets/js/index.js',
+  entry: {
+    index: './src/assets/js/index.js',
+    print: './src/assets/js/utils/print.js'
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Output Management'
+    })
+  ],
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true
   },
   module: {
     rules: [
