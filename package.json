@@ -1,0 +1,29 @@
+{
+  "name": "webpack-playground",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack --mode=\"development\"",
+    "build:prod": "webpack --mode=\"production\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marco-S117/webpack-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marco-S117/webpack-playground/issues"
+  },
+  "homepage": "https://github.com/Marco-S117/webpack-playground#readme",
+  "devDependencies": {
+    "webpack": "^5.26.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
