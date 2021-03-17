@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'SEN';
+  src: 
+    url('../fonts/sen-regular.woff') format('woff'),
+    url('../fonts/sen-regular.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background: url('../images/webpack-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  filter: opacity(0.1);
+}
+
+main {
+  font-family: SEN;
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  color: #333;
+}
+
+img {
+  display: block;
+  max-width: 250px;
+  margin: 0 auto;
+}
